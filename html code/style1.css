@@ -1,0 +1,30 @@
+#image{
+    height: 350px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+h1,h3, div{
+    text-align: center;
+}
+#main-hr{
+    background-color: black;
+    height: 1px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+html{
+    margin: 30px;
+
+}
+p{
+    text-align: left;
+}
+#figcaption{
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 20px;
+}

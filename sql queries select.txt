@@ -1,0 +1,10 @@
+1.select avg(h8) as average_8th_hour_consumption from electricity_reading;
+2.select avg(h1+h2+h3+h4+h5+h6+h7+h8) as average_unit_of_electricity_reading;
+3.select avg(payable_amount) as average_payable_amount from bill where payable_amount>1000;
+4.select avg(fine_amount) as average_fine_amount from bill where year=2018;
+5.select sum(payable_amount) as sum_payable_amount from bill;
+6.select sum(payable_amount) as sum_payable_amount from bill where due_date=2017/10/01;
+7.select min(total_units) as min_total_units from bill;
+8.select min(fine_amount) as second_min_fine_amount from bill where fine_amount > select min(fine_amount)from bill ;
+9.select month(payable_amount),min(total_units)as minimum_units from bill;
+10. select stddev(fine_amount) as standard_deviation_amount from bil where payable_amount between 2018/01/01 and 2018/12/31;
