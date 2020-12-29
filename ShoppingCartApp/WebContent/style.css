@@ -1,0 +1,59 @@
+
+        a{
+            text-decoration: none;
+        }
+        body{
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        a:hover{
+            color: black;
+        }
+        .unorderedlist{
+            list-style: none;
+            margin: 0px;
+            padding: 20px;
+            
+        }
+        .navbar{
+            display: block; 
+            background-color:aqua; 
+            margin: 0px;
+            padding: 0px;
+            text-align: right;
+            
+        }
+        .itemlist{
+            display: inline-block;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            width: 150px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            
+        }
+        html{
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .logindiv{
+            margin: 10px;
+        }
+        .loginsect{
+            margin-top: 10%;
+            margin-left: 40%;
+            position: fixed;
+            display: none;
+        }
+        .signupdiv{
+            margin: 10px;
+        }
+        .signupsect{
+            margin-top: 10%;
+            margin-left: 40%;
+            position: fixed;
+            display: none;
+        }
+        .visible{
+            display: block;
+        }

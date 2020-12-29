@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Servlets</display-name>
+  
+  <!-- ServletInterfaceDemo -->
+  <servlet>
+  	<servlet-name>hello1</servlet-name>
+  	<servlet-class>org.hcl.ServletInterfaceDemo</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+  	<servlet-name>hello1</servlet-name>
+  	<url-pattern>/servletinterfacedemo</url-pattern>
+  </servlet-mapping>
+  
+  <!-- GenericServletDemo -->
+  <servlet>
+  	<servlet-name>hello2</servlet-name>
+  	<servlet-class>org.hcl.GenericServletDemo</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+  	<servlet-name>hello2</servlet-name>
+  	<url-pattern>/genericservletdemo</url-pattern>
+  </servlet-mapping>
+  
+  <!-- HttpServletDemo -->
+  <servlet>
+  	<servlet-name>hello3</servlet-name>
+  	<servlet-class>org.hcl.HttpServletDemo</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+  	<servlet-name>hello3</servlet-name>
+  	<url-pattern>/httpservletdemo</url-pattern>
+  </servlet-mapping>
+</web-app>
