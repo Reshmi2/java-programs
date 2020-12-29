@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="product1" class="org.hcl.Products">
+		<constructor-arg index="0" value="1"/>
+		<constructor-arg index="1" value="Ice Cream"/>
+		<constructor-arg index="2" value="taste in winter"/>
+		<constructor-arg index="3" value="20"/>
+	</bean>
+	<bean id="product2" class="org.hcl.Products">
+		<constructor-arg index="0" value="2"/>
+		<constructor-arg index="1" value="Chocolate"/>
+		<constructor-arg index="2" value="become a kid"/>
+		<constructor-arg index="3" value="30"/>
+	</bean>
+	<bean id="product3" class="org.hcl.Products">
+		<constructor-arg index="0" value="3"/>
+		<constructor-arg index="1" value="Sprit"/>
+		<constructor-arg index="2" value="lifts the Thandar"/>
+		<constructor-arg index="3" value="10"/>
+	</bean>
+	<bean id="shoppingCart" class="org.hcl.ShopppingCart">
+	<property name="products" >
+		<list>
+			<ref bean="product1"/>
+			<ref bean="product2"/>
+			<ref bean="product3"/>
+		</list>
+	</property>
+	</bean>
+	<bean id="cashier" class="org.hcl.Cashier">
+		<constructor-arg index="0" value="D:\spring\workspace"/>
+		<constructor-arg index="1" value="Cashier"/>
+	</bean>
+</beans>
